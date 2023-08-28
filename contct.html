@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Virtual class</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./js/contact.js"></script>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0c0c0c;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #242424;
+} 
+#aDiv{width: 300px; height: 325px; margin: 0 auto;}
+.carousel .carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+form {
+      border: 5px solid #f1f1f1;
+      }
+      input[type=text], input[type=email] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      .icon {
+      font-size: 110px;
+      display: flex;
+      justify-content: center;
+      color: #4286f4;
+      }
+      button {
+      background-color: #4286f4;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grab;
+      width: 48%;
+      }
+      h1 {
+      text-align:center;
+      font-size:18;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: center;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+    </style>
+</head>
+<body>
+    <header 
+    >
+        <!--<img  class="extra-blur"src="images/a1.jpg" alt="img not found" style="width:100%" height="300" ;  >
+        <div  style="position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -200%);
+        font-size: 75px;
+        color: rgb(245, 247, 247);
+        display: flex;
+        justify-content: center;
+        ">Live Virtual Class</div>-->
+        <!--<canvas id="myCanvas" width="200" height="100" style="color: aliceblue;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+            
+            <script>
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.font="30px Arial";
+            ctx.strokeText("Live Virtual Class",20,90);
+            </script>-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/3aa.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/4aa.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+    </header>
+
+    <nav>
+        <ul >
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="index1.html">All Courses</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="lvc_result.html">LVC Result</a></li>
+            <li><a href="contct.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <br>
+    
+    <div style=" position: relative;
+        text-align: center;display: flex;" >
+          <article style="width: 50%;">
+            <form name="form2" onsubmit="return jfun2()"action="thanks.html">
+              <h1>Contact Us</h1>
+              <div class="icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="formcontainer">
+              <div class="container">
+                <label for="uname"><strong>Username</strong></label>
+                <input type="text" placeholder="Enter Username" name="txt1" >
+                <label for="desg"><strong>Designation</strong></label>
+                <input type="text" placeholder="Enter Designation" name="txt2" >
+                <label for="mail"><strong>E-mail</strong></label>
+                <input type="email" placeholder="Enter E-mail" name="txt3" >
+                
+              </div>
+              <button type="submit"><strong>Submit</strong></button>
+             
+            </form>
+          </article>
+            <article >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8654070606726!2d77.6138759093001!3d13.04423801323129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1770e1959907%3A0x368dea11d919b8a8!2sEpsilon!5e0!3m2!1sen!2sin!4v1692689428404!5m2!1sen!2sin" width="600px" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            
+            </article>
+            
+          </div> 
+         <br>
+         <br>
+
+
+         <footer style=" position: fixed;
+         bottom: 0;
+         text-align: center;
+         color: rgb(247, 250, 250);
+           background-color: black;
+           width: 100%;
+           height: 40px;">
+           
+           <marquee > Designed & Developed By: Sreya Reddy N</marquee>
+            
+         </footer>
+</body>
+</html>
